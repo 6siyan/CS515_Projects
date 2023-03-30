@@ -1,0 +1,65 @@
+[
+    {
+        "name" : "Last Sunday",
+        "desc": "desc",
+        "exits" : {"Tormoorow": 1},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Monday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 0, "Tormoorow": 2},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Tuesday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 1, "Tormoorow": 3},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Wednesday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 2, "Tormoorow": 4},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Monday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 3, "Tormoorow": 5},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Thursday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 4, "Tormoorow": 6},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Friday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 5, "Tormoorow": 7},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Saturday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 6, "Tormoorow": 8},
+        "items" : ["rose"]
+    },   
+
+    {
+        "name" : "Last Sunday",
+        "desc": "desc",
+        "exits" : {"Yestorday" : 7},
+        "items" : ["rose"]
+    }
+
+]
