@@ -21,7 +21,9 @@ with open(filename) as f:
 
 
 
-default_room_id = 1
+default_room_id = 0
+print(default_room_id)
+print(map_data[default_room_id])
 if map_data[default_room_id]:
     GS.curr_room = map_data[default_room_id]
     GS.personal_item = []
@@ -30,9 +32,9 @@ else:
 
 print_room(GS.curr_room)
 #go()
-while(1):
-    move = input("What would you like to do?")
-    if move in verb_dict.values:
-        verb_dict[move]
+# while(1):
+#     move = input("What would you like to do?")
+#     if move in verb_dict.values:
+#         verb_dict[move]
 
 
