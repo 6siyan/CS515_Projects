@@ -1,4 +1,3 @@
-
 def print_room(room):
     print(room["name"])
     print()
