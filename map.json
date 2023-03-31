@@ -32,15 +32,15 @@
     },   
 
     {
-        "name" : "Monday",
+        "name" : "Thursday",
         "desc": "desc",
         "exits" : {"Yestorday" : 3, "Tormoorow": 5},
-        "items" : ["rose"],
+        "items" : ["rose", "corwn"],
         "locked" : "No"
     },   
 
     {
-        "name" : "Thursday",
+        "name" : "Friday",
         "desc": "desc",
         "exits" : {"Yestorday" : 4, "Tormoorow": 6},
         "items" : ["rose"],
@@ -48,16 +48,9 @@
     },   
 
     {
-        "name" : "Friday",
-        "desc": "desc",
-        "exits" : {"Yestorday" : 5, "Tormoorow": 7},
-        "items" : ["rose"]
-    },   
-
-    {
         "name" : "Saturday",
         "desc": "desc",
-        "exits" : {"Yestorday" : 6, "Tormoorow": 8},
+        "exits" : {"Yestorday" : 5, "Tormoorow": 7},
         "items" : ["rose"],
         "locked" : "No"
     },   
@@ -65,7 +58,7 @@
     {
         "name" : "Last Sunday",
         "desc": "desc",
-        "exits" : {"Yestorday" : 7},
+        "exits" : {"Yestorday" : 6},
         "items" : ["rose"],
         "locked" : "Yes"
     }

@@ -13,11 +13,12 @@ def go(destination):
         else:
             GS.curr_room_id = map_data[GS.curr_room_id]["exits"][destination]
             print("You go " + destination + '.')
+            print_room(map_data[GS.curr_room_id])
     else:
         print("Sorry, you need to 'go' somewhere.")
 
 def look():
-    print_room()
+    print_room(map_data[GS.curr_room_id])
 
 def get(item):
     if item in map_data[GS.curr_room_id]["items"]: #need do a repeat check here.
