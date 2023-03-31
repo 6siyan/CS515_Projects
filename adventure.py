@@ -5,7 +5,7 @@ from desc_print import *
 from verb import *
 
 
-default_room_id = 0
+default_room_id = 1
 GS.curr_room_id = default_room_id
 person_items = []
 
@@ -23,10 +23,10 @@ while True:
         exit()
     else:
             move = move.split(' ')
-            if len(move) == 1 and move[0] in verb_dict:
-                verb_dict[move[0]]() # this's like look()
-            elif len(move) == 2 and move[0] in verb_dict:
-                if move[0] in verb_dict:
-                    verb_dict[move[0]](move[1]) # this's like go('east')
+            if len(move) == 1 and move[0] in verb_dict_1:
+                verb_dict_1[move[0]]() # this's like look()
+            elif len(move) == 2 and move[0] in verb_dict_2:
+                if move[0] in verb_dict_2:
+                    verb_dict_2[move[0]](move[1]) # this's like go('east')
             else:
                 print("Plase enter a right verb, You can enter help to get some hint.")

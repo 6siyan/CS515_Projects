@@ -8,7 +8,11 @@ class Verb(object):
 
 def go(destination):
     if destination in map_data[GS.curr_room_id]["exits"].keys():
-        GS.curr_room_id = map_data[GS.curr_room_id]["exits"][destination]
+        if map_data[map_data[GS.curr_room_id]["exits"][destination]]["locked"] == 'Yes' and 'key' not in person_data: # this means to check the next rooms locking state.
+            print("This is locked, you need find a key first!")
+        else:
+            GS.curr_room_id = map_data[GS.curr_room_id]["exits"][destination]
+            print("You go " + destination + '.')
     else:
         print("Sorry, you need to 'go' somewhere.")
 
@@ -21,7 +25,7 @@ def get(item):
         map_data[GS.curr_room_id]["items"].remove(item)
         person_data.append(item)
     else:
-        print("No item here, call Chinese Factory now.")
+        print("No this item in room, call Chinese Factory now.")
 
 def inventory():
     if len(person_data) == 0:
@@ -30,9 +34,28 @@ def inventory():
         print("Inventory:")
         print(person_data)
 
+def dorp(item):
+    if item in person_data:
+        person_data.remove(item)
+        map_data[GS.curr_room_id]["items"].append(item)
+    else:
+        print("No this item in inventory, call Chinese Factory now.")
 
 
-verb_dict = {"go": go, 
-             "look": look, 
-             "get": get, 
-             "inventory": inventory}
+
+verb_dict_1 = {
+             "look": look,
+             "l": look, 
+
+             "inventory": inventory,
+             "i": inventory
+             }
+
+verb_dict_2 = {
+            "go": go, 
+            "g": go,
+            "get": get,
+            "ge": get,
+            "dorp" : dorp,
+            "d": dorp 
+}
