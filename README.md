@@ -3,11 +3,17 @@
 This is the first project for CS515 Spring 2023
 
 Name: Siyan Liu 
+
 Mail: sliu112@stevens.edu
+
 GitHub repo: 
+
 Project time: 10 hours
+
 Test method: manual test. Try to build the Github Action service, but find not much thing to do in pytest.
+
 Bugs: not find for now, if you find please submit a issue on GitHub.
+
 Difficult issues: the diffcult thing
 
 
