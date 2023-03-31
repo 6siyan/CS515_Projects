@@ -4,4 +4,5 @@ class Game_state(object):
         self.personal_item = personal_item
 
 global GS
-GS = Game_state(1)
+
+GS = Game_state()

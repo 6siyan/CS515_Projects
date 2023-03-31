@@ -12,3 +12,6 @@ def test():
 
 def testLogin():
     print("test ture")
+
+def test_go():
+    pass
