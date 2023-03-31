@@ -4,25 +4,26 @@ from description import *
 from desc_print import *
 from verb import *
 
-
+winning = 1
+steps = 100
 default_room_id = 1
 GS.curr_room_id = default_room_id
 person_items = []
-
+print(steps and winning)
 try:
     map_data[GS.curr_room_id]
 except:
     print("No vaild room here, please check the map data")
     exit()
 
-while True:
+while steps and winning:
     try:
         move = input("What would you like to do?")
     except EOFError:
         print()
         print("Use 'quit' to exit.")
         continue
-    
+
     print_room(map_data[GS.curr_room_id])
     if move.lower() == "quit":
         print("Exiting game...")
@@ -36,3 +37,10 @@ while True:
                     verb_dict_2[move[0]](move[1]) # this's like go('east')
             else:
                 print("Plase enter a right verb, You can enter help to get some hint.")
+    steps -= 1
+    print(f"you have {steps} steps left!")
+
+if winning == 0:
+    print("You are win!")
+if steps == 0:
+    print("Game over, you are out of steps!")

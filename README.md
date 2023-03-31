@@ -14,8 +14,13 @@ Test method: manual test. Try to build the Github Action service, but find not m
 
 Bugs: not find for now, if you find please submit a issue on GitHub.
 
-Difficult issues: the diffcult thing
+Difficult issues: the diffcult thing is the system design part. The code itself is more easy than design.
 
+Extensions:
+
+    A drop verb:
+
+    Locked doors: 
 
 ## How to play
 You can invoke this game by running:

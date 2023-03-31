@@ -46,7 +46,6 @@ def dorp(item):
 verb_dict_1 = {
              "look": look,
              "l": look, 
-
              "inventory": inventory,
              "i": inventory
              }
