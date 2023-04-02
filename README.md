@@ -22,7 +22,7 @@ Extensions:
 
     Locked doors: There are locked rooms in the game. If you meet "This is locked, you need find a key first!". It means you should find the "key" item first. When you have a key in your inventory. You have access to a locked room.
 
-    Wining and losing conditions: There is a "crown" in the game. if you find the crown you will win. The step limit is 100 steps, if you exceed 100 steps you will lose the game.
+    Wining and losing conditions: There is a "crown" in the game. if you find the crown you will win. The step limit is 200 steps, if you exceed 200 steps you will lose the game.
 
 ## How to play
 You can invoke this game by running:
