@@ -10,7 +10,7 @@ def go(destination = None):
     if destination == None:
         print("Sorry, you need to 'go' somewhere.")
     elif destination in map_data[GS.curr_room_id]["exits"].keys():
-        if "locked" in map_data[map_data[GS.curr_room_id]["exits"][destination]] and map_data[map_data[GS.curr_room_id]["exits"][destination]]["locked"] == 'yes' and 'key' not in person_data: # this means to check the next rooms locking state.
+        if "locked" in map_data[map_data[GS.curr_room_id]["exits"][destination]] and map_data[map_data[GS.curr_room_id]["exits"][destination]]["locked"] == 'yes' and 'pswd' not in person_data: # this means to check the next rooms locking state.
             print("This is locked, you need find a key first!")
         else:
             GS.curr_room_id = map_data[GS.curr_room_id]["exits"][destination]

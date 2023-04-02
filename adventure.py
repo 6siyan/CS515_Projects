@@ -43,7 +43,7 @@ while steps and winning:
             else:
                 print("Plase enter a right verb.")
 
-    if "crown" in person_data:
+    if "cs 515 project code" in person_data:
         winning = 0
         break
     if "day" in map_data[GS.curr_room_id]:
