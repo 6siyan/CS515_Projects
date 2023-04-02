@@ -15,9 +15,11 @@ def go(destination = None):
         else:
             GS.curr_room_id = map_data[GS.curr_room_id]["exits"][destination]
             print("You go " + destination + '.')
+            print()
             print_room(map_data[GS.curr_room_id])
     else:
         print(f"There's no way to go {destination}.")
+
 
 def look():
     print_room(map_data[GS.curr_room_id])
@@ -38,7 +40,7 @@ def inventory():
         print("You're not carrying anything.")
     else:
         print("Inventory:")
-        print(", ".join(map(str, person_data)))
+        print("\n".join(map(str, person_data)))
         #print(str(person_data)[1:-1])
 
 def drop(item = None):
