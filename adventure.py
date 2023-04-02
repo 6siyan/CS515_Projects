@@ -4,11 +4,11 @@ from description import *
 from desc_print import *
 from verb import *
 
+# Game states are here.
 winning = 1
 steps = 100
 default_room_id = 1
 GS.curr_room_id = default_room_id
-person_items = []
 
 try:
     map_data[GS.curr_room_id]
@@ -29,14 +29,18 @@ while steps and winning:
         print("Exiting game...")
         exit()
     else:
-            move = move.split(' ', 1)
-            if len(move) == 1 and move[0] in verb_dict_1:
-                verb_dict_1[move[0]]() # this's like look()
+            move = move.lower().split(' ', 1)
+            if len(move) == 1: 
+                if move[0] in verb_dict_1:
+                    verb_dict_1[move[0]]() # this's like look()
+                elif move[0] in verb_dict_2:
+                    verb_dict_2[move[0]]()
             elif len(move) == 2 and move[0] in verb_dict_2:
                 if move[0] in verb_dict_2:
                     verb_dict_2[move[0]](move[1]) # this's like go('east')
             else:
-                print("Plase enter a right verb, You can enter help to get some hint.")
+                print("Plase enter a right verb.")
+                
     if "corwn" in person_data:
         winning = 0
         break

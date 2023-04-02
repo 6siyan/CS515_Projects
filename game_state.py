@@ -3,6 +3,4 @@ class Game_state(object):
         self.curr_room_id = curr_room_id
         self.personal_item = personal_item
 
-global GS
-
 GS = Game_state()

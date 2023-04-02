@@ -18,9 +18,11 @@ Difficult issues: the diffcult thing is the system design part. The code itself 
 
 Extensions:
 
-    A drop verb:
+    A drop verb: You can use "drop" to drop something from your inventory.
 
-    Locked doors: 
+    Locked doors: There are locked rooms in the game. If you meet "This is locked, you need find a key first!". It means you should find the "key" item first. When you have a key in your inventory. You have access to a locked room.
+
+    Wining and losing conditions: There is a "crown" in the game. if you find the crown you will win. The step limit is 100 steps, if you exceed 100 steps you will lose the game.
 
 ## How to play
 You can invoke this game by running:
@@ -39,11 +41,5 @@ get or ge to get a item in the room. like "get rose".
 drop or d to drop a personal item to the room. like "drop key"
 
 inventory or i to check what item in your bag. like "inventory"
-
-### Hint:
-There are locked rooms in the game.
-
-If you meet "This is locked, you need find a key first!". It means you should find the "key" item first. When you have a key in your inventory. You have access to a locked room.
-
 
 

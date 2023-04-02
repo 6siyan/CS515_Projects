@@ -1,66 +1,66 @@
 [
     {
-        "name" : "Last Sunday",
+        "name" : "last Sunday",
         "desc": "desc",
-        "exits" : {"Tormoorow": 1},
-        "items" : ["rose"],
-        "locked" : "Yes"
-    },
-
-    {
-        "name" : "Monday",
-        "desc": "desc",
-        "exits" : {"Yestorday" : 0, "Tormoorow": 2},
-        "items" : ["rose"],
-        "locked" : "No"
-    },   
-
-    {
-        "name" : "Tuesday",
-        "desc": "desc",
-        "exits" : {"Yestorday" : 1, "Tormoorow": 3},
-        "items" : ["key"],
-        "locked" : "No"
-    },
-
-    {
-        "name" : "Wednesday",
-        "desc": "desc",
-        "exits" : {"Yestorday" : 2, "Tormoorow": 4},
-        "items" : ["rose"],
-        "locked" : "No"
-    },   
-
-    {
-        "name" : "Thursday",
-        "desc": "desc",
-        "exits" : {"Yestorday" : 3, "Tormoorow": 5},
+        "exits" : {"tormoorow": 1},
         "items" : ["rose", "corwn"],
-        "locked" : "No"
+        "locked" : "yes"
+    },
+
+    {
+        "name" : "monday",
+        "desc": "desc",
+        "exits" : {"yestorday" : 0, "tormoorow": 2},
+        "items" : ["rose"],
+        "locked" : "no"
+    },  
+
+    {
+        "name" : "tuesday",
+        "desc": "desc",
+        "exits" : {"yestorday" : 1, "tormoorow": 3},
+        "items" : ["key"],
+        "locked" : "no"
+    },
+
+    {
+        "name" : "wednesday",
+        "desc": "desc",
+        "exits" : {"yestorday" : 2, "tormoorow": 4},
+        "items" : ["rose"],
+        "locked" : "no"
     },   
 
     {
-        "name" : "Friday",
+        "name" : "thursday",
         "desc": "desc",
-        "exits" : {"Yestorday" : 4, "Tormoorow": 6},
+        "exits" : {"yestorday" : 3, "tormoorow": 5},
         "items" : ["rose"],
-        "locked" : "No"
+        "locked" : "no"
     },   
 
     {
-        "name" : "Saturday",
+        "name" : "friday",
         "desc": "desc",
-        "exits" : {"Yestorday" : 5, "Tormoorow": 7},
+        "exits" : {"yestorday" : 4, "tormoorow": 6},
         "items" : ["rose"],
-        "locked" : "No"
+        "locked" : "no"
     },   
 
     {
-        "name" : "Last Sunday",
+        "name" : "saturday",
         "desc": "desc",
-        "exits" : {"Yestorday" : 6},
+        "exits" : {"yestorday" : 5, "tormoorow": 7},
         "items" : ["rose"],
-        "locked" : "Yes"
+        "locked" : "no"
+    },   
+
+    {
+        "name" : "last Sunday",
+        "desc": "desc",
+        "exits" : {"yestorday" : 6},
+        "items" : ["rose"],
+        "locked" : "yes"
     }
 
 ]
