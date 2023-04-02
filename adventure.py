@@ -1,6 +1,5 @@
 from game_state import GS
 from resources import map_data,person_data
-from description import *
 from desc_print import *
 from verb import *
 
@@ -48,7 +47,7 @@ while steps and winning:
         winning = 0
         break
     steps -= 1
-    print(f"you have {steps} steps left!")
+    #print(f"you have {steps} steps left!")
 
 if winning == 0:
     print("You are win!")
