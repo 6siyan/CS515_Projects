@@ -17,7 +17,7 @@ except:
 print_room(map_data[GS.curr_room_id])
 while steps and winning:
     try:
-        move = input("What would you like to do?")
+        move = input("What would you like to do? ")
     except EOFError:
         print()
         print("Use 'quit' to exit.")
