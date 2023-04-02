@@ -3,7 +3,7 @@
         "name" : "monday",
         "desc": "desc",
         "exits" : {"yestorday" : 1, "tormoorow": 2},
-        "items" : ["rose"],
+        "items" : ["Macbook Pro"],
         "locked" : "no",
         "day" : "1"
     },  
@@ -11,7 +11,7 @@
         "name" : "last Sunday",
         "desc": "a god here",
         "exits" : {"tormoorow": 0},
-        "items" : ["rose", "crown"],
+        "items" : ["macbook pro", "cs 515 project code"],
         "locked" : "yes",
         "day" : "1"
     },
@@ -20,9 +20,9 @@
 
     {
         "name" : "tuesday",
-        "desc": "a died dog here",
+        "desc": "a dog here",
         "exits" : {"yestorday" : 0, "tormoorow": 3},
-        "items" : ["key"],
+        "items" : ["pswd"],
         "locked" : "no",
         "day" : "1"
     },
@@ -31,7 +31,7 @@
         "name" : "wednesday",
         "desc": "desc",
         "exits" : {"yestorday" : 2, "tormoorow": 4},
-        "items" : ["rose"],
+        "items" : ["Macbook Pro"],
         "locked" : "no",
         "day" : "1"
     },   
@@ -40,7 +40,7 @@
         "name" : "thursday",
         "desc": "desc",
         "exits" : {"yestorday" : 3, "tormoorow": 5},
-        "items" : ["rose"],
+        "items" : ["Macbook Pro"],
         "locked" : "no",
         "day" : "1"
     },   
@@ -49,7 +49,7 @@
         "name" : "friday",
         "desc": "desc",
         "exits" : {"yestorday" : 4, "tormoorow": 6},
-        "items" : ["rose"],
+        "items" : ["Macbook Pro"],
         "locked" : "no",
         "day" : "1"
     },   
@@ -58,16 +58,16 @@
         "name" : "saturday",
         "desc": "desc",
         "exits" : {"yestorday" : 5, "tormoorow": 7},
-        "items" : ["rose"],
+        "items" : ["Macbook Pro"],
         "locked" : "no",
         "day" : "1"
     },   
 
     {
-        "name" : "last Sunday",
+        "name" : "next Sunday",
         "desc": "desc",
         "exits" : {"yestorday" : 6},
-        "items" : ["rose"],
+        "items" : ["Upload Machine"],
         "locked" : "yes",
         "day" : "1"
     }
