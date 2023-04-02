@@ -8,7 +8,7 @@ Mail: sliu112@stevens.edu
 
 GitHub repo: 
 
-Project time: 10 hours
+Project time: 15 hours
 
 Test method: manual test. Try to build the Github Action service, but find not much thing to do in pytest.
 

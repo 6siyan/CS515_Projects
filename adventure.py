@@ -5,7 +5,7 @@ from verb import *
 
 # Game states are here.
 winning = 1
-steps = 20000
+steps = 200
 default_room_id = 0
 GS.curr_room_id = default_room_id
 
@@ -43,11 +43,12 @@ while steps and winning:
             else:
                 print("Plase enter a right verb.")
 
-    if "corwn" in person_data:
+    if "crown" in person_data:
         winning = 0
         break
-    steps -= 1
-    #print(f"you have {steps} steps left!")
+    if "day" in map_data[GS.curr_room_id]:
+        steps -= int(map_data[GS.curr_room_id]["day"])
+        print(f"you have {steps} steps left!")
 
 if winning == 0:
     print("You are win!")

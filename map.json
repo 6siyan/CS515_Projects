@@ -4,14 +4,16 @@
         "desc": "desc",
         "exits" : {"yestorday" : 1, "tormoorow": 2},
         "items" : ["rose"],
-        "locked" : "no"
+        "locked" : "no",
+        "day" : "1"
     },  
     {
         "name" : "last Sunday",
         "desc": "a god here",
         "exits" : {"tormoorow": 0},
-        "items" : ["rose", "corwn"],
-        "locked" : "yes"
+        "items" : ["rose", "crown"],
+        "locked" : "yes",
+        "day" : "1"
     },
 
 
@@ -21,7 +23,8 @@
         "desc": "a died dog here",
         "exits" : {"yestorday" : 0, "tormoorow": 3},
         "items" : ["key"],
-        "locked" : "no"
+        "locked" : "no",
+        "day" : "1"
     },
 
     {
@@ -29,7 +32,8 @@
         "desc": "desc",
         "exits" : {"yestorday" : 2, "tormoorow": 4},
         "items" : ["rose"],
-        "locked" : "no"
+        "locked" : "no",
+        "day" : "1"
     },   
 
     {
@@ -37,7 +41,8 @@
         "desc": "desc",
         "exits" : {"yestorday" : 3, "tormoorow": 5},
         "items" : ["rose"],
-        "locked" : "no"
+        "locked" : "no",
+        "day" : "1"
     },   
 
     {
@@ -45,7 +50,8 @@
         "desc": "desc",
         "exits" : {"yestorday" : 4, "tormoorow": 6},
         "items" : ["rose"],
-        "locked" : "no"
+        "locked" : "no",
+        "day" : "1"
     },   
 
     {
@@ -53,7 +59,8 @@
         "desc": "desc",
         "exits" : {"yestorday" : 5, "tormoorow": 7},
         "items" : ["rose"],
-        "locked" : "no"
+        "locked" : "no",
+        "day" : "1"
     },   
 
     {
@@ -61,7 +68,8 @@
         "desc": "desc",
         "exits" : {"yestorday" : 6},
         "items" : ["rose"],
-        "locked" : "yes"
+        "locked" : "yes",
+        "day" : "1"
     }
 
 ]
