@@ -16,7 +16,7 @@ Bugs: not find for now, if you find please submit a issue on GitHub.
 
 Difficult issues: the diffcult thing is the system design part. The code itself is more easy than design.
 
-Extensions:
+## Extensions:
 
 ### A drop verb: 
 
@@ -34,7 +34,7 @@ There is a "cs 515 project code" item in the game. if you find the "cs 515 proje
 ## How to play
 You can invoke this game by running:
 
-python3 adventure.py [map filename] 
+    python3 adventure.py map.json
 
 ### Basic movement:
 You can use:
