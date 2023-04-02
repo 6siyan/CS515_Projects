@@ -10,5 +10,3 @@ def print_room(room):
         print()
     print("{} {}".format("Exits:" , " ".join(map(str, list(room["exits"].keys())))))
     print()
-
-

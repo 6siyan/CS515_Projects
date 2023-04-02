@@ -27,7 +27,7 @@ def look():
 def get(item = None):
     if item == None:
         print("Sorry, you need to 'get' something.")
-    elif item in map_data[GS.curr_room_id]["items"]: #need do a repeat check here.
+    elif "items" in map_data[GS.curr_room_id] and item in map_data[GS.curr_room_id]["items"]: #need do a repeat check here.
         # and not in person_data
         map_data[GS.curr_room_id]["items"].remove(item)
         person_data.append(item)
@@ -40,7 +40,7 @@ def inventory():
         print("You're not carrying anything.")
     else:
         print("Inventory:")
-        print("\n".join(map(str, person_data)))
+        print("\n  ".join(map(str, person_data)))
         #print(str(person_data)[1:-1])
 
 def drop(item = None):

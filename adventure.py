@@ -5,7 +5,7 @@ from verb import *
 
 # Game states are here.
 winning = 1
-steps = 200
+steps = 20000
 default_room_id = 0
 GS.curr_room_id = default_room_id
 
@@ -24,7 +24,7 @@ while steps and winning:
         continue
 
     if move.lower() == "quit":
-        print("Exiting game...")
+        print("Goodbye!")
         exit()
     else:
             move = move.lower().split(' ', 1)
