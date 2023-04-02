@@ -7,7 +7,7 @@ from verb import *
 # Game states are here.
 winning = 1
 steps = 200
-default_room_id = 1
+default_room_id = 0
 GS.curr_room_id = default_room_id
 
 try:
@@ -34,9 +34,13 @@ while steps and winning:
                     verb_dict_1[move[0]]() # this's like look()
                 elif move[0] in verb_dict_2:
                     verb_dict_2[move[0]]()
+                else:
+                    print("Plase enter a right verb.")
             elif len(move) == 2 and move[0] in verb_dict_2:
                 if move[0] in verb_dict_2:
                     verb_dict_2[move[0]](move[1]) # this's like go('east')
+                else:
+                    print("Plase enter a right verb.")
             else:
                 print("Plase enter a right verb.")
 
