@@ -1,24 +1,25 @@
 [
     {
-        "name" : "last Sunday",
+        "name" : "monday",
         "desc": "desc",
-        "exits" : {"tormoorow": 1},
+        "exits" : {"yestorday" : 1, "tormoorow": 2},
+        "items" : ["rose"],
+        "locked" : "no"
+    },  
+    {
+        "name" : "last Sunday",
+        "desc": "a god here",
+        "exits" : {"tormoorow": 0},
         "items" : ["rose", "corwn"],
         "locked" : "yes"
     },
 
-    {
-        "name" : "monday",
-        "desc": "desc",
-        "exits" : {"yestorday" : 0, "tormoorow": 2},
-        "items" : ["rose"],
-        "locked" : "no"
-    },  
+
 
     {
         "name" : "tuesday",
-        "desc": "desc",
-        "exits" : {"yestorday" : 1, "tormoorow": 3},
+        "desc": "a died dog here",
+        "exits" : {"yestorday" : 0, "tormoorow": 3},
         "items" : ["key"],
         "locked" : "no"
     },
