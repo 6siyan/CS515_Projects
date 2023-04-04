@@ -10,7 +10,9 @@ def go(destination = None):
     if destination == None:
         print("Sorry, you need to 'go' somewhere.")
     elif destination in map_data[GS.curr_room_id]["exits"].keys():
-        if "locked" in map_data[map_data[GS.curr_room_id]["exits"][destination]] and map_data[map_data[GS.curr_room_id]["exits"][destination]]["locked"] == 'yes' and 'pswd' not in person_data: # this means to check the next rooms locking state.
+        if "locked" in map_data[map_data[GS.curr_room_id]["exits"][destination]] \
+        and map_data[map_data[GS.curr_room_id]["exits"][destination]]["locked"] == 'yes' \
+        and 'pswd' not in person_data: # this means to check the next rooms locking state.
             print("This is locked, you need find a key first!")
         else:
             GS.curr_room_id = map_data[GS.curr_room_id]["exits"][destination]
@@ -27,8 +29,7 @@ def look():
 def get(item = None):
     if item == None:
         print("Sorry, you need to 'get' something.")
-    elif "items" in map_data[GS.curr_room_id] and item in map_data[GS.curr_room_id]["items"]: #need do a repeat check here.
-        # and not in person_data
+    elif "items" in map_data[GS.curr_room_id] and item in map_data[GS.curr_room_id]["items"]: 
         map_data[GS.curr_room_id]["items"].remove(item)
         person_data.insert(0, item)
         print(f"You pick up the {item}.")
