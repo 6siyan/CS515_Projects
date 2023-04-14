@@ -50,3 +50,21 @@ drop or d to drop a personal item to the room. like "drop key"
 inventory or i to check what item in your bag. like "inventory"
 
 
+## Project Review 
+Apr.11.2023
+
+### You can use this in shell to test the project like: 
+cat loop.01.in | python3 adventure.py loop.map > got  
+
+diff got loop.01.out
+
+
+
+
+
+### About Presentation:
+
+1. Do not read the slides.  
+
+2. Give time to everybody to read. About 1 min per slide.   
+
